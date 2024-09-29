@@ -5,6 +5,7 @@
 	outline: 2px solid green;
 	border-radius: 8px;
 	cursor: pointer;
+	user-select: none;
 	&:focus-visible {
 		outline-color: blue;
 	}
@@ -31,8 +32,12 @@
 	outline: 1px solid black;
 	width: var(--size);
 	height: var(--size);
-	cursor: pointer;
 	border-radius: 8px;
+	user-select: none;
+
+	&:not(:disabled) {
+		cursor: pointer;
+	}
 	&:focus-visible {
 		outline-color: orange;
 		outline-width: 3px;
