@@ -1,16 +1,12 @@
+import { initGame } from './content/populate-content.js';
 import { Attempt } from './buttons/enable-grid.js';
-// const attmp = new Attempt();
 
-// attmp.toggleGrid();
+let instructions = document.querySelector('.options');
+
 let editBtns = document.querySelectorAll('.btn-edit');
 
-// editBtns.forEach((btn)=>{
-//     btn.addEventListener('click',()=>{
-
-//     })
-// })
-
 function init() {
+	new initGame(instructions);
 	new Attempt(editBtns);
 }
 
