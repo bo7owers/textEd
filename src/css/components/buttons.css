@@ -38,7 +38,8 @@
 	&:not(:disabled) {
 		cursor: pointer;
 	}
-	&:focus-visible {
+	&:focus-visible,
+	&:active {
 		outline-color: orange;
 		outline-width: 3px;
 	}
