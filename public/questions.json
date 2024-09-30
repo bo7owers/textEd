@@ -1,0 +1,16 @@
+{
+	"questions": [
+		{
+			"description": "Container needed to carry drinks around.",
+			"answer": "bottle"
+		},
+		{
+			"description": "Mobuli computer that allows text, audio and video-based comunication.",
+			"answer": "phone"
+		},
+		{
+			"description": "Device that allows the user to hear audio privately",
+			"answer": "headphones"
+		}
+	]
+}
