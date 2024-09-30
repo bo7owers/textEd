@@ -24,9 +24,9 @@ class Attempt {
 				? btn.removeAttribute('disabled')
 				: btn.setAttribute('disabled', '');
 		});
-
-		console.log(this.state);
 	}
+
+	// creat validate selection
 }
 
 export { Attempt };
