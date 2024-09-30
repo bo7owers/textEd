@@ -9,11 +9,14 @@ class initGame {
 			let instructions = await resp.json();
 			console.log(instructions.questions[0]);
 
-			// Iterate over the questions and create an li element for each description
+			// iterate over the questions and create an li element for each description
 			for (const question of instructions.questions) {
-				const listItem = document.createElement('li');
-				listItem.textContent = question.description;
-				instructionList.appendChild(listItem);
+				let listItem = document.createElement('li');
+				let wordDiv = document.createElement('div');
+				wordDiv.className = 'word-container';
+				wordDiv.textContent = question.description;
+				listItem.append(wordDiv);
+				instructionList.append(listItem);
 			}
 		} catch (error) {
 			console.error('Error fetching questions:', error);
